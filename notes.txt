@@ -28,10 +28,10 @@ Know your IDE
     - Shortcuts
 
 Python code essentials
-    - Foundational Concepts: datatypes, variables and code blocks
+    > Foundational Concepts: datatypes, variables and code blocks
     - functions and arguments
     - code structure
-    - conditionals, loops
+    > conditionals, loops
     - the range object
     - while, break, quit
 
