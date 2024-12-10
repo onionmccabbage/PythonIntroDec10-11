@@ -15,6 +15,8 @@ Welcome and Introductions
     What you currently know
     What you want to know
     Course Resources
+        https://neueda.conygre.com/Sites/optum_intro_to_python_nof330/site/index.html
+        https://github.com/onionmccabbage/PythonIntroDec10-11
     python.org documentation
     Skillnet NI forms
         - make sure these are completed
