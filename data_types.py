@@ -36,3 +36,14 @@ if g.isnumeric():
 squares = [i*i for i in range(1,11)] # remember [] will make a list
 print(squares)
     
+# Slicing....
+# all ordinal collections can use slicing
+words = 'is it lunch yet I am hungry'
+my_food = ['fish', 'soup', 'salad']
+my_drink = ('Tea', 'Coffee', 'Juice', 'Water')
+print(words[0]) # ordinal collection start at zero
+print(my_food[1]) # 'soup'
+print(my_drink[3]) # 'Water'
+print(squares[7]) # 64
+# NB we cannot use slicing for non-ordonal collections such as dict or set
+print(words[6:11]) # slicing is [start:stop-before:step]
