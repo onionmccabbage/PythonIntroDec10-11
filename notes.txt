@@ -29,7 +29,7 @@ Know your IDE
 
 Python code essentials
     > Foundational Concepts: datatypes, variables and code blocks
-    - functions and arguments
+    > functions and arguments
     - code structure
     > conditionals, loops
     > the range object
@@ -48,7 +48,7 @@ Packages
 
 Creating Functions, Modules, and Packages
     - functions and classes are written inside modules (files) which are placed in packages (folders)
-    - Explore the creation and use of functions for modular code
+    > Explore the creation and use of functions for modular code
     - Understand the concept of modules and packages for organizing and structuring code
 
 Introduction to Functional Programming
