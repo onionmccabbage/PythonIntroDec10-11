@@ -42,6 +42,8 @@ Python's primary collection types
     > Add, remove elements, and iterate over lists, tuples and dictionaries
     - Other Python Collections
 
+NB everything in Python is an Object
+
 Packages
     - just a folder to gather related modules
     - might contain __init__.py (which is no longer needed)
