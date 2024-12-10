@@ -1,9 +1,9 @@
-Review 1
+Review 1 50 minutes (until 2:30)
 ========
 Ask the user to enter a guess, until they guess correctly 
 (Guess an integer between 0 and 100)
-  from random import randint # this is a good way to make a random number
-  n = randint(0,100)
+  import random # this is a good way to make a random number
+  n = random.randint(0,100)
 
 If it's too high or too low tell them
 When they get it right the game ends
