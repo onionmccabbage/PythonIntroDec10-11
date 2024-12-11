@@ -2,6 +2,7 @@
 
 class WG():
     '''name (non-empty string) aligment (goodie or baddie) materials (tuple of values) '''
+    __slots__ = ['__name', '__align', '__materials']
     def __init__(self, n, a, m):  
         self.name = n
         self.align = a
@@ -35,8 +36,14 @@ class WG():
         else:
             self.__materials = ('plasticene')
     def __str__(self):
-        return f''  
+        # construct a string containing all the materials
+        s = ''
+        for m in self.__materials:
+            s += f'\t{m}\n'
+        return f'''{self.name} is a {self.align}\n{s}'''
 
 # exercise the code
 wallace = WG('Wallace', 'Goodie', ('plasticene','silicone'))
 feathers = WG('Feathers McGraw' ,'Baddie', ('wire', 'silicone'))
+print(wallace)
+print(feathers)
