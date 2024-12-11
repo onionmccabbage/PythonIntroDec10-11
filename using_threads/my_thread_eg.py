@@ -10,4 +10,6 @@ def someFunction(n):
 
 if __name__ == '__main__':
     t1 = Thread(target=someFunction, args=('A',)) # this is a one-member tuple
+    t2 = Thread(target=someFunction, args=('B',)) # this is a one-member tuple
     t1.start()
+    t2.start()
