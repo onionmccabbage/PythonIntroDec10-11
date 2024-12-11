@@ -23,7 +23,6 @@ Welcome and Introductions
 
 How to access the recordings.... username is student password Belfast2024
 
-
 Know your IDE
     > Editing Files
     - Setting python interpreter
@@ -60,8 +59,8 @@ Introduction to Functional Programming
     - Learn how to use higher-order functions such as map and reduce for concise and expressive code
 
 Object-Oriented Programming
-    - Learn the principles and syntax of Object-Oriented Programming
-    - Understand how to define and use classes and objects in Python
+    > Learn the principles and syntax of Object-Oriented Programming
+    > Understand how to define and use classes and objects in Python
 
 Read and write files (including csv)
 
