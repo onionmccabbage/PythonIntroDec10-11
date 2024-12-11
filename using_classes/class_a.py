@@ -30,6 +30,18 @@ class User():
         '''validate the incoming value is a non-empty string'''
         if type(new_name)==str and len(new_name)>0:
             self.__name = new_name
+        else:
+            raise TypeError('Name must be a non-empty string')
+    @property
+    def age(self):
+        return self.__age
+    @age.setter
+    def age(self, new_age):
+        '''validate the incoming age is a positive number'''
+        if type(new_age) in (int, float) and new_age>=0:
+            self.__age = new_age
+        else:
+            raise TypeError('Age must be a positive number')
     def __str__(self):
         '''Whenever we use 'print' it will call this function'''
         return f'{self.name} age {self.age} authentication:{self.authorization}'
@@ -39,6 +51,7 @@ class User():
 # make use of the class
 userA = User('Petra', 24, False) # here we create an instance of our class (calls the __init__ function)
 userB = User('Zara', 67, True)
+userC = User(43, 43, True) # problem - name must be a string
 print(userA, userB)
 
 
