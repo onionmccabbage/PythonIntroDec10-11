@@ -15,7 +15,16 @@ def useMap(d):
     result = map(findAverage, data) # pass a function into a function (higher order function)
     return result
 
-# using 'filter'
+# using 'filter' to apply a function that filters out only matching values
+temps = range(-10, 36) # imagine a range of temperatures
+# suppose acceptable temperatures are 12-28
+def ok(t):
+    if t>=12 and t<=35:
+        return t
+    
+def useTempFilter():
+    fine = filter(ok, temps)
+    return fine
 
 # exercise the code
 print( findAverage( (1,2,3,4,5) ) ) # 3 (15/5)
@@ -24,3 +33,6 @@ print( r ) # we have a 'map' object
 # we may iterate over the map objke t  to see the actual results
 for i in r:
     print(i)
+a = useTempFilter() # we now have a 'filter' object
+for i in a: # we iterate over all teh items in the filter object
+    print( i ) # 12, 13,...35
