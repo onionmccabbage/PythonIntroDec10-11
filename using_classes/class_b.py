@@ -15,10 +15,25 @@ class WG():
             self.__name = n
         else:
             self.__name = 'default' # or we could raise an exception
-
-
-
-
+    @property
+    def align(self):
+        return self.__align
+    @align.setter
+    def align(self, a):
+        # check the lower-case version of the text
+        if type(a)==str and a.lower() in ('goodie', 'baddie'):
+            self.__align = a
+        else:
+            self.__align = 'goodie' # sensible default
+    @property
+    def materials(self):
+        return self.__materials
+    @materials.setter
+    def materials(self, m):
+        if type(m)==tuple:
+            self.__materials = m
+        else:
+            self.__materials = ('plasticene')
     def __str__(self):
         return f''  
 
