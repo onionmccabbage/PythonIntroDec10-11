@@ -65,10 +65,10 @@ Object-Oriented Programming
 Read and write files (including csv)
 
 Overview of Python in use
-    - Automation, machine learning
+    > Automation, machine learning
     > Jupyter, database, API over http
     > Python can run in a module (.py) in a notebook (.ipynb) or in immediate mode
-    - threading, microservices
+    > threading, microservices
 
 for further reference see learnpython.org
 
