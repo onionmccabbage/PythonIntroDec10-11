@@ -34,7 +34,8 @@ class User():
             raise TypeError('Name must be a non-empty string')
     @property
     def age(self):
-        return self.__age
+        # this is called 'name mangling'. It makes it very hard ot directly acess the property
+        return self.__age 
     @age.setter
     def age(self, new_age):
         '''validate the incoming age is a positive number'''
@@ -42,9 +43,21 @@ class User():
             self.__age = new_age
         else:
             raise TypeError('Age must be a positive number')
+    # Write getter and setter methods for the 'authorization' (must be a boolean)
+    @property
+    def authorization(self):
+        return self.__authorization
+    @authorization.setter
+    def authorization(self, new_auth):
+        if type(new_auth)==bool:
+            self.__authorization = new_auth
+        else:
+            raise TypeError('Authorization must be True or False')
+
     def __str__(self):
         '''Whenever we use 'print' it will call this function'''
         return f'{self.name} age {self.age} authentication:{self.authorization}'
+
 
 # NB in Python, anything with __nnn__ is a built-in feature of Python. Often called 'dunder'
 
