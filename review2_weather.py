@@ -42,7 +42,7 @@ class Weather():
 def writeWeatherFile(report):
     '''commit the report string to a text file'''
     with(open ('weather_reports.txt', 'at')) as fout:
-        fout.write(f'{report.showWeatherReport()}\n')
+        fout.write(f'{report}\n')
 
 def readWeatherFile():
     '''retrieve all the reports from a text file'''
