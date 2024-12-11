@@ -17,6 +17,7 @@ class User():
     Name will be a non-empty string
     Age will be a positive number (float or int)
     Authorization will be a boolean'''
+    __slots__ = ['__name', '__age', '__authorization'] # restrict to only these properties
     def __init__(self, n, a, auth): # the initializer is run every time we use the class
         self.name = n # call the 'name' setter function
         self.age = a
@@ -53,7 +54,6 @@ class User():
             self.__authorization = new_auth
         else:
             raise TypeError('Authorization must be True or False')
-
     def __str__(self):
         '''Whenever we use 'print' it will call this function'''
         return f'{self.name} age {self.age} authentication:{self.authorization}'
@@ -64,7 +64,7 @@ class User():
 # make use of the class
 userA = User('Petra', 24, False) # here we create an instance of our class (calls the __init__ function)
 userB = User('Zara', 67, True)
-userC = User(43, 43, True) # problem - name must be a string
+# userC = User('Orla', 4, None) # problem - name must be a string, age must be positive, auth must be boolean
 print(userA, userB)
 
 
