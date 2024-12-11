@@ -18,9 +18,18 @@ class User():
     Age will be a positive number (float or int)
     Authorization will be a boolean'''
     def __init__(self, n, a, auth): # the initializer is run every time we use the class
-        self.name = n
+        self.name = n # call the 'name' setter function
         self.age = a
         self.authorization = auth
+    # In order to validate properties, we write proerty methods like this:
+    @property # this is called a 'decorator'
+    def name(self): # 'getter' method
+        return self.__name
+    @name.setter
+    def name(self, new_name): # 'setter' method
+        '''validate the incoming value is a non-empty string'''
+        if type(new_name)==str and len(new_name)>0:
+            self.__name = new_name
     def __str__(self):
         '''Whenever we use 'print' it will call this function'''
         return f'{self.name} age {self.age} authentication:{self.authorization}'
